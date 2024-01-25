@@ -267,7 +267,7 @@
     }
     .stages__item-lg {
         grid-column: span 6;
-        grid-row: span 12;
+        grid-row: span 6;
     }   
     .stages__item-m {
         grid-column: span 6;
@@ -388,6 +388,9 @@
     }
     .support__more img {
         max-width: 110%;
+    }
+    .stages__item:hover {
+        outline: none;
     }
 }
 @media (max-width:360px) {
