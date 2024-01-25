@@ -1,0 +1,349 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html,
+body {
+height: 100%;
+}
+.wrapper {
+min-height: 100%;
+display: flex;
+flex-direction: column;
+}
+.main {
+flex-grow: 1;
+}
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+}
+button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+.fade-in {
+    opacity: 0; 
+    animation: fadeIn ease-in 1; 
+    animation-fill-mode: forwards; 
+    animation-duration: 1s;
+}  
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+.title {
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: rgba(49, 49, 49, 1);
+    transition: all 2s ease;
+}
+.container {
+    max-width: 1262px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+body {
+    color: #313131;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2; 
+    font-family: 'Golos Text', sans-serif;
+}
+.header {    
+    position: absolute;
+    top: 26px;
+    left: 0;
+    width: 100%;
+}
+.logo {
+    width: 245px;
+    height: 36px;
+}
+.main__wrapper {
+    min-height: calc(100svh - 60px);
+    background-image: url(../images/main1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+}
+.main-screen {
+    padding-top: 25%;
+    max-width: 542px;
+}
+.main-screen__title-left {
+    font-size: 60px;
+    line-height: 1.1;
+}
+.main-screen__title-center {
+    font-size: 60px;
+    line-height: 1.1;
+    text-align: center;
+}
+.main-screen__text {
+    margin: 24px 0 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.3; 
+}
+.main-screen__btns {
+    display: flex;
+    gap: 0 16px;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+}
+.main-screen__btns-support {
+    padding: 20px;
+    color: #FFF;    
+    border-radius: 66px;
+    background: #1F1F1F;
+    transition: background 1s ease;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+}
+.main-screen__btns-support:hover {
+    color: #1F1F1F;    
+    background: #FBCE51;
+}
+.main-screen__btns-more {
+    padding: 20px;
+    color: #1F1F1F;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+    border-radius: 66px;
+    border: 2px solid #1F1F1F;
+    transition: background 1s ease;
+}
+.main-screen__btns-more:hover {
+    color: #FFF; 
+    background: #1F1F1F;
+}
+.main-running {    
+    width: 100%;
+    height: 60px;
+    background: #F54932;
+    padding: 18px 0;
+    color: #FFF;
+    font-family: 'Merriweather', serif;
+    font-size: 22px;
+    line-height: 1.1; 
+    text-transform: uppercase;
+    overflow:hidden;
+    white-space: nowrap;
+    transition: marquee 5s linear;
+}  
+.main-running p {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 25s infinite linear;
+}
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+.support {
+    padding: 80px 0 200px;
+}
+.support__about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 64px;
+}
+.support__about-title {
+    max-width: 764px;
+    font-size: 36px;
+    line-height: 1.35;
+}
+.support__about-title span{
+    color: #F54932;
+}
+.support__about-img {
+    max-width: 394px;
+}
+.support__about-img--none {
+    max-width: 100%;
+    display: none;
+}
+.support__more {
+    padding-top: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 16px;
+}
+.support__more-img {
+    max-width: 529px;
+}
+.support__more-desc {
+    max-width: 704px;
+}
+.support__more-table {
+    margin: 60px 0 48px;
+}
+del {
+	text-decoration: line-through;
+	text-decoration-color: red;
+}
+table {
+    border: none;
+    width: 100%;
+}
+ 
+table tr {
+    border-bottom: 2px solid #D0D0D0;
+}
+table tr:last-child {
+    border-bottom: none;
+} 
+table td {
+    padding: 16px;
+    border-right: 2px solid #D0D0D0;
+}
+table td:last-child {
+    width: 55%;
+    font-weight: 600;
+    border-right: none;
+} 
+.support__more-text {
+    color: rgba(48, 87, 162, 1);    
+}
+.stages__main-mobile {
+    display: none;
+}
+
+.stages {
+    padding-bottom: 200px;
+}
+.stages__title {
+    font-size: 54px;
+    max-width: 806px;
+    margin-bottom: 55px;
+}
+.stages__title::after{
+    display: inline-block;
+    content: 'Будущие источники обогащения васюкинцев';
+    width: 280px;
+    color: #3057A2;
+    font-family: 'Golos Text', sans-serif;
+    text-transform: none;
+    font-size: 20px;    
+}
+.stages__list {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    counter-reset: number;
+    position: relative;
+}
+.stages__item {
+    background-image: url(../images/stage-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px 20px 20px 72px;
+    list-style-type: none;
+    position: relative;
+}
+.stages__item::before {
+    position: absolute;  
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    top: 20px;
+    left: 20px;
+    width: 36px;
+    height: 36px;
+    border-radius: 60px;
+    background: #FFF;
+    font-weight: 600;
+    counter-increment: number;
+    content: counter(number);
+
+}
+.stages__item-sm {
+    grid-column: span 2;
+}
+.stages__item-lg {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.stages__item-m {
+    grid-column: span 4;
+    padding-right: 282px;    
+}
+.stages__item-7 {
+    position: absolute;
+    content: '';
+    bottom: 20px;
+    right: -35px;
+}
+.players {
+    position: relative;
+}
+.players__title {
+    font-size: 54px;
+    margin-bottom: 60px;
+}
+
+.players__slider{
+    max-width: 1262px;
+    overflow: hidden;
+    padding-bottom: 140px;
+    text-align: center;
+}
+
+.footer {
+    padding: 40px 0 72px;
+    background-color: #E9DED4;
+}
+.footer__text {
+    font-size: 16px;
+    opacity: 0.6;
+}
+
+.players__name {
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 6px;
+}
+.players__btn {
+    color: rgba(48, 87, 162, 1);
+    font-size: 16px;
+    border-radius: 62px;
+    border: 1px solid #3057A2;
+    padding: 12px;
+    transition: background 1s ease;
+}
+.players__btn:hover {
+    color: #fff;
+    border: 1px solid #3057A2;
+    background: #3057A2;
+}
+.players__desc {
+    opacity: 0.6;
+    padding-bottom: 20px;
+}
