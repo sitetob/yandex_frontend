@@ -203,6 +203,25 @@
     }
 }
 @media (max-width:534px) {    
+    .main-screen__btns-support br,
+    .main-screen__btns-more br {
+        display: none;
+    }
+    .main-screen__btns-more {
+    opacity: 0.9;
+    background: #FFF;
+    border: none;
+    }
+    .main-screen__btns {
+        flex-wrap: wrap; 
+        gap: 14px 0;     
+        padding-bottom: 20px;  
+    }
+    .main-screen__btns-support, .main-screen__btns-more {
+        width: 100%;
+        flex: auto;
+        padding: 18px 20px;
+    }
     .main__wrapper {
          min-height: calc(100svh - 38px);
     }
@@ -283,12 +302,12 @@
         top: auto;
         bottom: 0;
         left: auto;
-        right: 35%;
+        right: 33%;
     }
     .swiper-button-prev {
         top: auto;
         bottom: 0;
-        left: 35%;
+        left: 33%;
         right: auto;
     }
     .players {
@@ -306,32 +325,14 @@
     }
 
 }
-@media screen and (max-width: 375px) {
-    .main-screen__btns-support br,
-    .main-screen__btns-more br {
-        display: none;
-    }
-    .main-screen__btns-more {
-    opacity: 0.9;
-    background: #FFF;
-    border: none;
-    }
+@media screen and (max-width: 375px) {    
     .main-screen {
         padding-top: 90px;        
     }
     .main-screen__text {
         text-align: left;
         margin: 24px 0 32px;
-    }
-    .main-screen__btns {
-        flex-wrap: wrap; 
-        gap: 14px 0;       
-    }
-    .main-screen__btns-support, .main-screen__btns-more {
-        width: 100%;
-        flex: auto;
-        padding: 18px 20px;
-    }
+    }    
     .stages__main {
         display: none;
     }
